@@ -9,8 +9,8 @@ Editado com amor pelo TheMars, Desenvolvedor da Marsencrypt.
 Vá para Marte em: https://marsencrypt.tk.
 */
 
-@import url(https://rawgit.com/electrobrasil/EB/master/chatelements.css);
-@import url(https://rawgit.com/electrobrasil/EB/master/badges.css);
+@import url(https://raw.githubusercontent.com/Eimantux29/naujas/master/chatelements.css);
+@import url(https://raw.githubusercontent.com/Eimantux29/naujas/master/badges.css);
 
 #dj-button,#dj-button.is-full .left,#dj-button.is-leave .left,#dj-button.is-locked .left,#dj-button.is-quit .left,#dj-button.is-wait .left {
     border-radius: 8px
