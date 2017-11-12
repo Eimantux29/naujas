@@ -1,3 +1,7 @@
+<?php
+header('X-Content-Type-Options: nosniff');
+?>
+
 {
     "room": "爪ū𝕤ų 💃 𝔪𝐔𝐳𝔦Ҝα 🎶",
     "author": "Energy",
