@@ -1,11 +1,8 @@
-<?php
-header('X-Content-Type-Options: nosniff');
-?>
-
 {
     "room": "爪ū𝕤ų 💃 𝔪𝐔𝐳𝔦Ҝα 🎶",
     "author": "Energy",
-    "css": "https://raw.githubusercontent.com/Eimantux29/naujas/master/sunkuus.css",
+    "icon": "https://rawgit.com/Satskhi/EDTRCS/master/images/EDT-Logo2.png",
+    "css": "https://rawgit.com/Satskhi/EDTRCS/master/EDT.css",
     "rules": {
         "allowAutorespond": true,
         "allowAutowoot": true,
@@ -17,7 +14,7 @@ header('X-Content-Type-Options: nosniff');
         "forceSmartVote": false
     },
     "ccc": {
-        "admin": "#f50808",
+        "admin": null,
         "ambassador": "#FF8C00",
         "host": "#228B22",
         "cohost": "#228B22",
@@ -30,13 +27,13 @@ header('X-Content-Type-Options: nosniff');
         "user": null
     },
     "images": {
-        "background": "https://cdn.radiant.dj/rcs/bg/2k15nyc.jpg",
-        "playback": null,
+        "background": "https://rawgit.com/Satskhi/EDTRCS/master/images/EDT-Background-2.jpg",
+        "playback": "https://rawgit.com/Satskhi/EDTRCS/master/images/PlaybackEDT2.0.png",
         "admin": null,
         "ambassador": "https://rawgit.com/Satskhi/EDTRCS/master/images/BA.png",
         "host": "https://rawgit.com/Satskhi/EDTRCS/master/images/Host-Co-Host.png",
         "cohost": "https://rawgit.com/Satskhi/EDTRCS/master/images/Host-Co-Host.png",
-        "manager": null,
+        "manager": "https://rawgit.com/Satskhi/EDTRCS/master/images/Manager1.0.png",
         "bouncer": "https://rawgit.com/Satskhi/EDTRCS/master/images/Bouncer1.0.png",
         "rdj": "https://rawgit.com/Satskhi/EDTRCS/master/images/RDJ.png",
         "subscriber": null,
@@ -153,9 +150,14 @@ header('X-Content-Type-Options: nosniff');
         "!run": 5
     },
     "emotes": {
+    	"edt": "https://rawgit.com/Satskhi/EDTRCS/master/images/EDT-Logo.png",
+        "edtmini": "https://i.imgur.com/9JR4xqX.png",
+    	"edt2": "https://i.imgur.com/DBtr6Tr.png",
     	"chuck": "https://i.imgur.com/nw0CkZA.gif",
+        "satskhi": "https://i.imgur.com/bTXR2HA.png",
     	"hatsune": "https://i.imgur.com/7c2rZBi.gif",
     	"djsona": "https://i.imgur.com/p9j9onO.gif",
+    	"tosaindo": "https://i.imgur.com/X5ovb1Y.gif",
     	"tom": "https://i.imgur.com/tPX2arb.png",
     	"100%": "https://i.imgur.com/tHMZV3i.png",
     	"0%": "https://i.imgur.com/Y0DnYA9.png",
@@ -222,6 +224,7 @@ header('X-Content-Type-Options: nosniff');
         "edtgrab": "https://i.imgur.com/arieJpV.png?1",
         "edtmeh": "https://i.imgur.com/EP1TvNw.png?1",
         "saquei": "https://i.imgur.com/pgrRjbx.jpg?1",
-        "saqueigif": "https://i.imgur.com/anPTUp4.gif"
+        "saqueigif": "https://i.imgur.com/anPTUp4.gif",
+        "triggeredd": "https://i.imgur.com/P62r5Kd.jpg"
     }
 }
