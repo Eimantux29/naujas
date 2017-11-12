@@ -1,9 +1,3 @@
-@import url("https://raw.githubusercontent.com/Eimantux29/naujas/master/Bot.css");
-@import url("https://raw.githubusercontent.com/Eimantux29/naujas/master/WAM.css");
-@import url("https://raw.githubusercontent.com/Eimantux29/naujas/master/Staff.css");
-@import url("https://raw.githubusercontent.com/Eimantux29/naujas/master/Bot.css");
-
-
 /*
  ┌————————————————————┐
  │     Variables      │
@@ -974,4 +968,482 @@ i.icon.icon-time {
 /* Silver sub */
 #user-lists .icon-chat-silver-subscriber + :not(.is-staff) span {
     color: hsl(220,25%,70%);
+}
+
+/*
+ ┌————————————————————┐
+ │       EDTBot       │
+ └————————————————————┘
+*/
+#chat [data-cid^='13720951-'] {
+    border-left: rgba(40, 120, 60, 0.7) 3px solid !important;
+    background: linear-gradient(to right, rgba(19, 194, 181, 0.27)0,rgba(40, 120, 60, 0.3) 100%) !important;
+    box-shadow: none !important;
+}
+#chat [data-cid^='13720951-'] .badge-box .bdg {
+    border-radius: 5px !important;
+    background-image: url("https://rawgit.com/Satskhi/EDTRCS/master/images/BotBadge.png") !important;
+    background-repeat: round !important;
+    background-size: 30px !important;
+}
+
+#user-rollover.id-13720951 .badge-box .bdg {
+    border-radius: 5px !important;
+    background-image: url("https://rawgit.com/Satskhi/EDTRCS/master/images/BotBadge.png") !important;
+    background-repeat: round !important;
+    background-size: 30px !important;
+}
+#chat [data-cid^='13720951-'] .un,
+#chat [data-cid^='13720951-'] .timestamp {
+    color: #5A6 !important;
+}
+#user-lists .list .user.id-13720951 .name:after,
+#chat [data-cid^='13720951-'] .un:after,
+#user-rollover.id-13720951 .username:after {
+    content: 'BOT';
+    display: inline-block;
+    margin: 0 0 0 5px; padding: 0 3px;
+
+    color: #095;
+    background: linear-gradient(rgba(10,10,10,.5), rgba(0,0,0,.5));
+    border-radius: 4px;
+    font-size: 10px;
+}
+#user-lists .list .user.id-13720951:hover .name:after,
+#chat [data-cid^='13720951-'] .un:hover:after {
+    background: linear-gradient(rgba(0, 153, 85, 0.2), rgba(0, 101, 56, 0.2));
+}
+
+#vote .label{
+display: none !important;
+}
+#vote .value{
+ top: 25px !important;
+}
+#vote .top,
+#woot .icon,
+#grab .icon,
+#meh .icon{
+height: 80px !important;
+width: 80px !important;
+margin: 0 !important;
+top: 0 !important;
+}
+#woot.crowd-response .icon{
+ background: url('https://rawgit.com/Satskhi/EDTRCS/master/images/Icons/bWoot.png');
+}
+
+#woot.crowd-response.disabled .icon,
+#woot.crowd-response.selected .icon {
+ background: url('https://rawgit.com/Satskhi/EDTRCS/master/images/Icons/bWootW.png');
+}
+
+#grab.crowd-response .icon{
+ background: url('https://rawgit.com/Satskhi/EDTRCS/master/images/Icons/bGrab.png');
+}
+
+#grab.crowd-response.disabled .icon,
+#grab.crowd-response.selected .icon {
+ background: url('https://rawgit.com/Satskhi/EDTRCS/master/images/Icons/bGrabW.png');
+}
+
+#meh.crowd-response .icon{
+ background: url('https://rawgit.com/Satskhi/EDTRCS/master/images/Icons/bMeh.png');
+}
+
+#meh.crowd-response.disabled .icon,
+#meh.crowd-response.selected .icon {
+ background: url('https://rawgit.com/Satskhi/EDTRCS/master/images/Icons/bMehW.png');
+}
+#woot,
+#grab,
+#meh{
+  height: 80px !important;
+  width: 80px !important;
+  border-radius: 50%;
+  border: 2px solid;
+  bottom: 10px !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+#woot:hover,
+#grab:hover,
+#meh:hover {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+#vote .bottom{
+ background: rgba(0, 0, 0, 0) !important;
+}
+#woot:not(.selected){
+  border: 2px solid #25b961;
+}
+#grab:not(.selected){
+  border: 2px solid #aa74ff;
+}
+#meh:not(.selected){
+  border: 2px solid #c42e3b;
+}
+
+#woot.selected {
+    background: #25b961 !important;
+}
+#grab.selected{
+    background: #aa74ff !important;
+}
+#meh.selected{
+    background: #c42e3b !important;
+}
+#vote .crowd-response.disabled .bottom {
+    background: rgba(0, 0, 0, 0.28);
+}
+
+
+
+#woot.crowd-response.disabled .icon:before,
+#woot.crowd-response.selected .icon:before {
+    content: url(https://rawgit.com/Satskhi/EDTRCS/master/images/Icons/bWootW.png);
+    position: absolute;
+    right: 0px;
+    padding: 0 0px;
+}
+#woot.crowd-response .icon:before {
+    content: url(https://rawgit.com/Satskhi/EDTRCS/master/images/Icons/bWoot.png);
+    position: absolute;
+    right: 0px;
+    padding: 0 0px;
+}
+#woot:hover .icon:before {
+    -webkit-animation-name: woot;
+    animation-name: woot;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+#woot .icon:before {
+    opacity: 0;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes woot {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-1em);
+    transform: translateY(-1em);
+  }
+}
+#grab.crowd-response:not(.selected) .icon:after {
+    content: url(https://rawgit.com/Satskhi/EDTRCS/master/images/Icons/bGrab.png);
+    position: absolute;
+    right: 0px;
+    padding: 1px -1px;
+}
+#grab.crowd-response.disabled .icon:after {
+    content: url(https://rawgit.com/Satskhi/EDTRCS/master/images/Icons/bGrabW.png);
+    position: absolute;
+    right: 0px;
+    padding: 1px -1px;
+}
+#grab:hover .icon:after {
+    -webkit-animation-name: grab;
+    animation-name: grab;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+#grab .icon:after {
+    opacity: 0;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes grab {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1) translateZ(0);
+    transform: scale(1) translateZ(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.5) translateZ(0);
+    transform: scale(1.5) translateZ(0);
+  }
+}
+#meh.crowd-response.disabled .icon:after,
+#meh.crowd-response.selected .icon:after {
+    content: url(https://rawgit.com/Satskhi/EDTRCS/master/images/Icons/bMehW.png);
+    position: absolute;
+    right: 0px;
+    padding: 0 0;
+}
+#meh.crowd-response .icon:after {
+    content: url(https://rawgit.com/Satskhi/EDTRCS/master/images/Icons/bMeh.png);
+    position: absolute;
+    right: 0px;
+    padding: 0 0;
+}
+#meh:hover .icon:after {
+    -webkit-animation-name: meh;
+    animation-name: meh;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+#meh .icon:after {
+    opacity: 0;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes meh {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(1em);
+    transform: translateY(1em);
+  }
+}
+
+#woot.selected .icon, #grab.selected .icon, #meh.selected .icon {
+    animation: pulse 1s ease infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#dj-button {
+   background-color: rgba(0, 0, 0, 0) !important;
+}
+#dj-button:hover {
+   background-color: rgba(0, 0, 0, 0.35) !important;
+}
+#dj-button .left{
+ background: rgba(0, 0, 0, 0) !important;
+}
+#dj-button {
+    left: 25px !important;
+    right: 1100px !important;
+    margin: auto;
+}
+.video-only #dj-button{
+   left: 0px !important;
+}
+#dj-button {
+    width: 72px !important;
+}
+#dj-button span{
+    opacity: 0;
+    width: 120px;
+
+}
+#dj-button:hover span{
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    opacity: 1.0;
+    width: 148px;
+}
+#dj-button:hover {
+    width: 230px !important;
+}
+#dj-button {
+    border-radius: 50px;
+}
+#dj-button.is-locked {
+    cursor: no-drop;
+}
+#dj-button.is-full, #dj-button.is-locked {
+border: 2px solid #585858;
+}
+#dj-button.is-leave, #dj-button.is-quit {
+border: 2px solid #c42e3b;
+}
+#dj-button {
+border: 2px solid #25b961;
+}
+#dj-button span{
+pointer-events: none;
+}
+#dj-button:hover span{
+pointer-events: auto;
+}
+
+#dj-button,
+#dj-button span,
+#chat .un,
+#vote,
+#woot,
+#woot .top
+#grab,
+#grab .top
+#meh,
+#meh .top{
+    -webkit-transition:     all 0.3s ease;
+    -moz-transition:        all 0.3s ease;
+    -o-transition:          all 0.3s ease;
+    transition:             all 0.3s ease;
+}
+/*
+ ┌————————————————————┐
+ │  RCS Vote list     │
+ └————————————————————┘
+*/
+.votes-rs {
+    background-color: rgba(0, 0, 0, 0.50) !important;
+}
+#woot-rs .title {
+    background-color: #25b961;
+}
+#grab-rs .title {
+    background-color: #aa74ff;
+}
+#meh-rs .title {
+    background-color: #c42e3b;
+}
+/*
+ ┌————————————————————┐
+ │    Grab pop-up     │
+ └————————————————————┘
+*/
+.pop-menu.grab {
+    background: transparent;
+}
+.pop-menu.grab .bar {
+    background: linear-gradient(rgb(170, 116, 255), #925aff);
+    box-shadow: inset -157px 0 0 0 #222;
+}
+.pop-menu .bar .bar-divider {
+    background: #AAA;
+}
+.pop-menu.grab .menu::-webkit-scrollbar-thumb {
+    background: rgb(105, 68, 170) !important;
+}
+.pop-menu.grab .menu ul {
+    background: rgba(0,0,0,.5)
+}
+.pop-menu.grab .menu ul li:hover {
+    background: linear-gradient(rgba(170, 116, 255, .5), rgba(146, 90, 255, .5)) !important
+}
+.pop-menu.grab .menu ul li.create:hover {
+    background: linear-gradient(rgba(66, 165, 220, .5), rgba(0, 155, 221, .5)) !important
+}
+.pop-menu.grab .menu ul li:hover i {
+    filter: brightness(3);
+}
+
+/* Xuxa */
+#user-lists .list.room .user.role-manager.id-3427443 .name {
+    color: #FF8C00 !important;
+}
+/* Xuxa */
+
+/* Staff */
+.icon-chat-ambassador + span {
+    color: #FF8C00 !important;
+}
+.icon-chat-host + span {
+    color: #228B22 !important;
+}
+.icon-chat-cohost + span {
+    color: #228B22 !important;
+}
+.icon-chat-manager + span {
+    color: #68B354 !important;
+}
+.icon-chat-bouncer + span {
+    color: #68B354 !important;
+}
+.icon-chat-dj + span {
+    color: #68B354 !important;
+}
+.icon-chat-ambassador {
+	background: url("https://rawgit.com/Satskhi/EDTRCS/master/images/BA.png") !important;
+}
+.icon-chat-host {
+	background: url("https://rawgit.com/Satskhi/EDTRCS/master/images/Host-Co-Host.png") !important;
+}
+.icon-chat-cohost {
+	background: url("https://rawgit.com/Satskhi/EDTRCS/master/images/Host-Co-Host.png") !important;
+}
+.icon-chat-manager {
+	background: url("https://rawgit.com/Satskhi/EDTRCS/master/images/Manager1.0.png") !important;
+}
+.icon-chat-bouncer {
+	background: url("https://rawgit.com/Satskhi/EDTRCS/master/images/Bouncer1.0.png") !important;
+}
+.icon-chat-dj {
+	background: url("https://rawgit.com/Satskhi/EDTRCS/master/images/RDJ.png") !important;
+}
+/* Staff */
+
+/*new roles n stuff*/
+/*promoter and plot*/
+.is-plot .name,
+#user-rollover.is-plot .info .role span,
+#chat .from.plot .un,
+.is-promoter .name,
+#user-rollover.is-promoter .info .role span,
+#chat .from.promoter .un {
+        color: #8694b2;
+}
+.icon-chat-plot,
+.icon-chat-promoter{
+       filter: grayscale(100%);
+}
+
+/*
+ ┌————————————————————┐
+ │       EDTBot       │
+ └————————————————————┘
+*/
+#chat [data-cid^='13720951-'] {
+    border-left: rgba(40, 120, 60, 0.7) 3px solid !important;
+    background: linear-gradient(to right, rgba(19, 194, 181, 0.27)0,rgba(40, 120, 60, 0.3) 100%) !important;
+    box-shadow: none !important;
+}
+#chat [data-cid^='13720951-'] .badge-box .bdg {
+    border-radius: 5px !important;
+    background-image: url("https://rawgit.com/Satskhi/EDTRCS/master/images/BotBadge.png") !important;
+    background-repeat: round !important;
+    background-size: 30px !important;
+}
+
+#user-rollover.id-13720951 .badge-box .bdg {
+    border-radius: 5px !important;
+    background-image: url("https://rawgit.com/Satskhi/EDTRCS/master/images/BotBadge.png") !important;
+    background-repeat: round !important;
+    background-size: 30px !important;
+}
+#chat [data-cid^='13720951-'] .un,
+#chat [data-cid^='13720951-'] .timestamp {
+    color: #5A6 !important;
+}
+#user-lists .list .user.id-13720951 .name:after,
+#chat [data-cid^='13720951-'] .un:after,
+#user-rollover.id-13720951 .username:after {
+    content: 'BOT';
+    display: inline-block;
+    margin: 0 0 0 5px; padding: 0 3px;
+
+    color: #095;
+    background: linear-gradient(rgba(10,10,10,.5), rgba(0,0,0,.5));
+    border-radius: 4px;
+    font-size: 10px;
+}
+#user-lists .list .user.id-13720951:hover .name:after,
+#chat [data-cid^='13720951-'] .un:hover:after {
+    background: linear-gradient(rgba(0, 153, 85, 0.2), rgba(0, 101, 56, 0.2));
 }
