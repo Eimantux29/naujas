@@ -1,6 +1,6 @@
 {
 	"room": "Electro Brasil",
-	"css": "https://rawgit.com/electrobrasil/EB/master/style.css",
+	"css": "https://raw.githubusercontent.com/Eimantux29/naujas/master/style.css",
 	"rules": {
             "allowAutorespond": true,
             "allowAutowoot": true,
