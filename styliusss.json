@@ -2,7 +2,7 @@
 	"room": "testas",
 	"author": "Ekstazė",
 	"icon": null,
-	"css": "https://raw.githubusercontent.com/Eimantux29/naujas/master/room_theme.css",
+	"css": "https://raw.githubusercontent.com/Eimantux29/naujas/master/room_themes.css",
 	"rules": {
 		"allowAutorespond": true,
 		"allowAutowoot": true,
