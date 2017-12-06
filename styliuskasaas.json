@@ -1,0 +1,45 @@
+{
+	"room": "🌠 𝕄𝕦𝕫𝕚𝕜𝕠𝕤 ⋆ 𝕆𝕒𝕫ė 🌠",
+	"author": "Ekstazė",
+	"icon": null,
+	"css": "https://raw.githubusercontent.com/Eimantux29/naujas/master/room.css",
+	"rules": {
+		"allowAutorespond": true,
+		"allowAutowoot": true,
+		"allowAutojoin": false,
+		"allowAutograb": true,
+		"allowSmartVote": true,
+		"allowEmotes": true,
+		"allowShowingMehs": true,
+		"forceSmartVote": false
+	},
+	"ccc": {
+		"admin": "#42a5dc",
+		"ambassador": "#89be6c",
+		"host": "#db182e",
+		"cohost": "#ff1e37",
+		"manager": "#13ae27",
+		"bouncer": "#05abe4",
+		"rdj": "#7936e8",
+		"subscriber": "#c59840",
+		"silversubscriber": "#8491b1",
+		"friend": "",
+		"user": "#797a7d"
+	},
+	"images": {
+		"background": "https://cdn.radiant.dj/rcs/bg/2k15nyc.jpg",
+		"playback": "null",
+		"admin": null,
+		"ambassador": null,
+		"host": "",
+		"cohost": "",
+		"manager": "",
+		"bouncer": "",
+		"rdj": "",
+		"subscriber": null,
+		"silversubscriber": null
+	},
+	"emotes": {			
+		
+			"axl": "https://i.imgur.com/eaYZ3m7.gif",
+
