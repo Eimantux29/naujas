@@ -1,6 +1,6 @@
 {
 	"room": "🌠 𝕄𝕦𝕫𝕚𝕜𝕠𝕤 ⋆ 𝕆𝕒𝕫ė 🌠",
-	"css": "https://rawgit.com/electrobrasil/EB/master/style.css",
+	"css":"https://rawgit.com/NCFCBot/pi/master/ressources/blue.css",
 	"rules": {
             "allowAutorespond": true,
             "allowAutowoot": true,
